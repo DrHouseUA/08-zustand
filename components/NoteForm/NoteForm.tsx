@@ -75,7 +75,7 @@ const NoteForm = () => {
           name="tag"
           className={css.select}
           onChange={handleChange}
-          defaultValue={draft.tag}
+          value={draft.tag}
         >
           <option value="Todo">Todo</option>
           <option value="Work">Work</option>
