@@ -19,6 +19,7 @@ const NoteForm = () => {
     mutationFn: createNote,
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["notes"] });
+      clearDraft();
       onClose();
     },
   });
@@ -32,7 +33,6 @@ const NoteForm = () => {
     if (data) {
       console.log(data);
       mutate(data);
-      clearDraft();
     }
   };
 
