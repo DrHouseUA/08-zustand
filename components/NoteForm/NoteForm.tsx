@@ -52,7 +52,7 @@ const NoteForm = () => {
           id="title"
           name="title"
           onChange={handleChange}
-          defaultValue={draft.title}
+          value={draft.title}
           className={css.input}
         />
       </div>
@@ -65,7 +65,7 @@ const NoteForm = () => {
           rows={8}
           className={css.textarea}
           onChange={handleChange}
-          defaultValue={draft.content}
+          value={draft.content}
         />
       </div>
 

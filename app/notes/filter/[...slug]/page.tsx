@@ -19,9 +19,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${searchTag} Notes`,
     description: `List of ${searchTag} notes`,
     openGraph: {
-      title: `Notes Friltered by tag: ${searchTag}`,
-      description: `You take this filter: ${searchTag}`,
-      url: `/notes/filter/${searchTag}`,
+      title: `Notes Filtered by tag: ${searchTag}`,
+      description: `Notes filtered by the '${searchTag}' tag.`,
+      url: `https:/notehub.com/notes/filter/${searchTag}`,
       siteName: "NoteHub",
       images: [
         {
