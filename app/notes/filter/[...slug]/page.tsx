@@ -16,12 +16,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug: tag } = await params;
   const searchTag = tag[0] === "all" ? undefined : tag[0];
   return {
-    title: `Notes`,
-    description: "List of notes",
+    title: `${searchTag} Notes`,
+    description: `List of ${searchTag} notes`,
     openGraph: {
-      title: `Notes Frilter by tag: ${searchTag}`,
+      title: `Notes Friltered by tag: ${searchTag}`,
       description: `You take this filter: ${searchTag}`,
-      url: `app/notes/filter/${searchTag}`,
+      url: `/notes/filter/${searchTag}`,
       siteName: "NoteHub",
       images: [
         {

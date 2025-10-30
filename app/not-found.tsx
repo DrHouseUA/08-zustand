@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import css from "./Not-found.module.css";
 
-export const metaData: Metadata = {
+export const metadata: Metadata = {
   title: `Not-found 404 of Note Hub App`,
   description: "There is no such page, please visit https://notehub.com/",
   openGraph: {

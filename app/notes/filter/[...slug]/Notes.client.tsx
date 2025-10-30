@@ -23,7 +23,12 @@ export default function Notes({ tag }: NotesProps) {
   const { data } = useQuery<FetchNotesResponse>({
     queryKey: ["notes", { currentPage, search: searchQuery, tag: tag }],
     queryFn: () =>
-      fetchNotes({ page: currentPage, perPage: 12, search: searchQuery }),
+      fetchNotes({
+        page: currentPage,
+        perPage: 12,
+        search: searchQuery,
+        tag: tag,
+      }),
     placeholderData: keepPreviousData,
     refetchOnMount: false,
   });

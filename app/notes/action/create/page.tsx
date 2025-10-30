@@ -3,11 +3,11 @@ import CreateNote from "./CreateNote";
 
 export const metadata: Metadata = {
   title: `Create Note`,
-  description: "From to create a note",
+  description: "Form to create a note",
   openGraph: {
-    title: `Note Hub App`,
-    description: "Training in metaData and zustand",
-    url: `https://notehub.com/`,
+    title: `Create Note page in NoteHub App`,
+    description: "Form to create a note",
+    url: `https://notehub.com/notes/action/create`,
     siteName: "NoteHub",
     images: [
       {
@@ -22,9 +22,5 @@ export const metadata: Metadata = {
 };
 
 export default function CreatePage() {
-  return (
-    <div>
-      <CreateNote />
-    </div>
-  );
+  return <CreateNote />;
 }
